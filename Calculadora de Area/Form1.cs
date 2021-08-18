@@ -66,5 +66,17 @@ namespace Calculadora_de_Area
                     txt_Area.Text = (Math.Pow(float.Parse(txt_Radius.Text), 2) * Math.PI).ToString();
             }
         }
+
+        private void bClear_Click(object sender, EventArgs e)
+        {
+            rbt_Circulo.Checked = false;
+            rbt_Rectangulo.Checked = false;
+            rbt_Triangulo.Checked = false;
+
+            txt_Area.Text = "";
+            txt_Base.Text = "";
+            txt_Height.Text = "";
+            txt_Radius.Text = "";
+        }
     }
 }

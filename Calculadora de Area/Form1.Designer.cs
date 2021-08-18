@@ -42,6 +42,7 @@ namespace Calculadora_de_Area
             this.txt_Area = new System.Windows.Forms.TextBox();
             this.bCalculate = new System.Windows.Forms.Button();
             this.lTitle = new System.Windows.Forms.Label();
+            this.bClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // rbt_Rectangulo
@@ -49,7 +50,7 @@ namespace Calculadora_de_Area
             this.rbt_Rectangulo.AutoSize = true;
             this.rbt_Rectangulo.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbt_Rectangulo.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.rbt_Rectangulo.Location = new System.Drawing.Point(293, 140);
+            this.rbt_Rectangulo.Location = new System.Drawing.Point(288, 135);
             this.rbt_Rectangulo.Name = "rbt_Rectangulo";
             this.rbt_Rectangulo.Size = new System.Drawing.Size(96, 25);
             this.rbt_Rectangulo.TabIndex = 0;
@@ -64,7 +65,7 @@ namespace Calculadora_de_Area
             this.rbt_Triangulo.AutoSize = true;
             this.rbt_Triangulo.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbt_Triangulo.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.rbt_Triangulo.Location = new System.Drawing.Point(293, 171);
+            this.rbt_Triangulo.Location = new System.Drawing.Point(288, 166);
             this.rbt_Triangulo.Name = "rbt_Triangulo";
             this.rbt_Triangulo.Size = new System.Drawing.Size(84, 25);
             this.rbt_Triangulo.TabIndex = 1;
@@ -79,7 +80,7 @@ namespace Calculadora_de_Area
             this.rbt_Circulo.AutoSize = true;
             this.rbt_Circulo.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbt_Circulo.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.rbt_Circulo.Location = new System.Drawing.Point(293, 202);
+            this.rbt_Circulo.Location = new System.Drawing.Point(288, 197);
             this.rbt_Circulo.Name = "rbt_Circulo";
             this.rbt_Circulo.Size = new System.Drawing.Size(67, 25);
             this.rbt_Circulo.TabIndex = 2;
@@ -134,7 +135,7 @@ namespace Calculadora_de_Area
             this.lArea.BackColor = System.Drawing.Color.Coral;
             this.lArea.Cursor = System.Windows.Forms.Cursors.Default;
             this.lArea.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lArea.Location = new System.Drawing.Point(49, 263);
+            this.lArea.Location = new System.Drawing.Point(49, 253);
             this.lArea.Name = "lArea";
             this.lArea.Size = new System.Drawing.Size(89, 24);
             this.lArea.TabIndex = 10;
@@ -183,7 +184,7 @@ namespace Calculadora_de_Area
             this.txt_Area.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Area.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt_Area.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Area.Location = new System.Drawing.Point(157, 263);
+            this.txt_Area.Location = new System.Drawing.Point(157, 253);
             this.txt_Area.Name = "txt_Area";
             this.txt_Area.ReadOnly = true;
             this.txt_Area.Size = new System.Drawing.Size(100, 22);
@@ -196,7 +197,7 @@ namespace Calculadora_de_Area
             this.bCalculate.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.bCalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bCalculate.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bCalculate.Location = new System.Drawing.Point(293, 261);
+            this.bCalculate.Location = new System.Drawing.Point(129, 304);
             this.bCalculate.Name = "bCalculate";
             this.bCalculate.Size = new System.Drawing.Size(91, 24);
             this.bCalculate.TabIndex = 15;
@@ -216,10 +217,24 @@ namespace Calculadora_de_Area
             this.lTitle.Text = "AREA CALCULATOR";
             this.lTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // bClear
+            // 
+            this.bClear.BackColor = System.Drawing.Color.DarkOrange;
+            this.bClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bClear.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bClear.Location = new System.Drawing.Point(226, 304);
+            this.bClear.Name = "bClear";
+            this.bClear.Size = new System.Drawing.Size(91, 24);
+            this.bClear.TabIndex = 17;
+            this.bClear.Text = "Clear";
+            this.bClear.UseVisualStyleBackColor = false;
+            this.bClear.Click += new System.EventHandler(this.bClear_Click);
+            // 
             // CalculArea
             // 
             this.BackColor = System.Drawing.Color.BurlyWood;
             this.ClientSize = new System.Drawing.Size(441, 364);
+            this.Controls.Add(this.bClear);
             this.Controls.Add(this.lTitle);
             this.Controls.Add(this.bCalculate);
             this.Controls.Add(this.txt_Area);
@@ -254,6 +269,7 @@ namespace Calculadora_de_Area
         private System.Windows.Forms.TextBox txt_Area;
         private System.Windows.Forms.Button bCalculate;
         private System.Windows.Forms.Label lTitle;
+        private System.Windows.Forms.Button bClear;
     }
 }
 
