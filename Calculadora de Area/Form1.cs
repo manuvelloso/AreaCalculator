@@ -73,6 +73,11 @@ namespace Calculadora_de_Area
             rbt_Rectangulo.Checked = false;
             rbt_Triangulo.Checked = false;
 
+            txt_Height.Enabled = true;
+            txt_Radius.Enabled = true;
+            txt_Base.Enabled = true;
+
+
             txt_Area.Text = "";
             txt_Base.Text = "";
             txt_Height.Text = "";
