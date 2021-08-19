@@ -29,6 +29,7 @@ namespace Calculadora_de_Area
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CalculArea));
             this.rbt_Rectangulo = new System.Windows.Forms.RadioButton();
             this.rbt_Triangulo = new System.Windows.Forms.RadioButton();
             this.rbt_Circulo = new System.Windows.Forms.RadioButton();
@@ -50,7 +51,7 @@ namespace Calculadora_de_Area
             this.rbt_Rectangulo.AutoSize = true;
             this.rbt_Rectangulo.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbt_Rectangulo.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.rbt_Rectangulo.Location = new System.Drawing.Point(288, 135);
+            this.rbt_Rectangulo.Location = new System.Drawing.Point(304, 142);
             this.rbt_Rectangulo.Name = "rbt_Rectangulo";
             this.rbt_Rectangulo.Size = new System.Drawing.Size(96, 25);
             this.rbt_Rectangulo.TabIndex = 0;
@@ -65,7 +66,7 @@ namespace Calculadora_de_Area
             this.rbt_Triangulo.AutoSize = true;
             this.rbt_Triangulo.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbt_Triangulo.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.rbt_Triangulo.Location = new System.Drawing.Point(288, 166);
+            this.rbt_Triangulo.Location = new System.Drawing.Point(304, 173);
             this.rbt_Triangulo.Name = "rbt_Triangulo";
             this.rbt_Triangulo.Size = new System.Drawing.Size(84, 25);
             this.rbt_Triangulo.TabIndex = 1;
@@ -80,7 +81,7 @@ namespace Calculadora_de_Area
             this.rbt_Circulo.AutoSize = true;
             this.rbt_Circulo.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbt_Circulo.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.rbt_Circulo.Location = new System.Drawing.Point(288, 197);
+            this.rbt_Circulo.Location = new System.Drawing.Point(304, 204);
             this.rbt_Circulo.Name = "rbt_Circulo";
             this.rbt_Circulo.Size = new System.Drawing.Size(67, 25);
             this.rbt_Circulo.TabIndex = 2;
@@ -96,7 +97,7 @@ namespace Calculadora_de_Area
             this.lBase.BackColor = System.Drawing.Color.NavajoWhite;
             this.lBase.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.lBase.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lBase.Location = new System.Drawing.Point(49, 135);
+            this.lBase.Location = new System.Drawing.Point(65, 142);
             this.lBase.Name = "lBase";
             this.lBase.Size = new System.Drawing.Size(89, 24);
             this.lBase.TabIndex = 4;
@@ -109,7 +110,7 @@ namespace Calculadora_de_Area
             this.lAlto.BackColor = System.Drawing.Color.NavajoWhite;
             this.lAlto.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.lAlto.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lAlto.Location = new System.Drawing.Point(49, 175);
+            this.lAlto.Location = new System.Drawing.Point(65, 182);
             this.lAlto.Name = "lAlto";
             this.lAlto.Size = new System.Drawing.Size(89, 24);
             this.lAlto.TabIndex = 6;
@@ -122,7 +123,7 @@ namespace Calculadora_de_Area
             this.lRadius.BackColor = System.Drawing.Color.NavajoWhite;
             this.lRadius.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.lRadius.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lRadius.Location = new System.Drawing.Point(49, 211);
+            this.lRadius.Location = new System.Drawing.Point(65, 218);
             this.lRadius.Name = "lRadius";
             this.lRadius.Size = new System.Drawing.Size(89, 24);
             this.lRadius.TabIndex = 8;
@@ -135,7 +136,7 @@ namespace Calculadora_de_Area
             this.lArea.BackColor = System.Drawing.Color.Coral;
             this.lArea.Cursor = System.Windows.Forms.Cursors.Default;
             this.lArea.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lArea.Location = new System.Drawing.Point(49, 253);
+            this.lArea.Location = new System.Drawing.Point(65, 260);
             this.lArea.Name = "lArea";
             this.lArea.Size = new System.Drawing.Size(89, 24);
             this.lArea.TabIndex = 10;
@@ -147,7 +148,7 @@ namespace Calculadora_de_Area
             this.txt_Base.BackColor = System.Drawing.Color.SeaShell;
             this.txt_Base.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Base.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Base.Location = new System.Drawing.Point(157, 137);
+            this.txt_Base.Location = new System.Drawing.Point(173, 144);
             this.txt_Base.Mask = "99999";
             this.txt_Base.Name = "txt_Base";
             this.txt_Base.Size = new System.Drawing.Size(100, 22);
@@ -159,7 +160,7 @@ namespace Calculadora_de_Area
             this.txt_Height.BackColor = System.Drawing.Color.SeaShell;
             this.txt_Height.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Height.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Height.Location = new System.Drawing.Point(157, 177);
+            this.txt_Height.Location = new System.Drawing.Point(173, 184);
             this.txt_Height.Mask = "99999";
             this.txt_Height.Name = "txt_Height";
             this.txt_Height.Size = new System.Drawing.Size(100, 22);
@@ -171,7 +172,7 @@ namespace Calculadora_de_Area
             this.txt_Radius.BackColor = System.Drawing.Color.SeaShell;
             this.txt_Radius.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Radius.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Radius.Location = new System.Drawing.Point(157, 215);
+            this.txt_Radius.Location = new System.Drawing.Point(173, 222);
             this.txt_Radius.Mask = "99999";
             this.txt_Radius.Name = "txt_Radius";
             this.txt_Radius.Size = new System.Drawing.Size(100, 22);
@@ -184,7 +185,7 @@ namespace Calculadora_de_Area
             this.txt_Area.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Area.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt_Area.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Area.Location = new System.Drawing.Point(157, 253);
+            this.txt_Area.Location = new System.Drawing.Point(173, 260);
             this.txt_Area.Name = "txt_Area";
             this.txt_Area.ReadOnly = true;
             this.txt_Area.Size = new System.Drawing.Size(100, 22);
@@ -197,7 +198,7 @@ namespace Calculadora_de_Area
             this.bCalculate.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.bCalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bCalculate.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bCalculate.Location = new System.Drawing.Point(129, 304);
+            this.bCalculate.Location = new System.Drawing.Point(145, 311);
             this.bCalculate.Name = "bCalculate";
             this.bCalculate.Size = new System.Drawing.Size(91, 24);
             this.bCalculate.TabIndex = 15;
@@ -210,7 +211,7 @@ namespace Calculadora_de_Area
             this.lTitle.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lTitle.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lTitle.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lTitle.Location = new System.Drawing.Point(53, 47);
+            this.lTitle.Location = new System.Drawing.Point(69, 54);
             this.lTitle.Name = "lTitle";
             this.lTitle.Size = new System.Drawing.Size(331, 41);
             this.lTitle.TabIndex = 16;
@@ -222,7 +223,7 @@ namespace Calculadora_de_Area
             this.bClear.BackColor = System.Drawing.Color.DarkOrange;
             this.bClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bClear.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bClear.Location = new System.Drawing.Point(226, 304);
+            this.bClear.Location = new System.Drawing.Point(242, 311);
             this.bClear.Name = "bClear";
             this.bClear.Size = new System.Drawing.Size(91, 24);
             this.bClear.TabIndex = 17;
@@ -233,7 +234,7 @@ namespace Calculadora_de_Area
             // CalculArea
             // 
             this.BackColor = System.Drawing.Color.BurlyWood;
-            this.ClientSize = new System.Drawing.Size(441, 364);
+            this.ClientSize = new System.Drawing.Size(464, 395);
             this.Controls.Add(this.bClear);
             this.Controls.Add(this.lTitle);
             this.Controls.Add(this.bCalculate);
@@ -248,6 +249,7 @@ namespace Calculadora_de_Area
             this.Controls.Add(this.rbt_Circulo);
             this.Controls.Add(this.rbt_Triangulo);
             this.Controls.Add(this.rbt_Rectangulo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CalculArea";
             this.Text = "CalculArea";
             this.ResumeLayout(false);
