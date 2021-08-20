@@ -30,9 +30,9 @@ namespace Calculadora_de_Area
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CalculArea));
-            this.rbt_Rectangulo = new System.Windows.Forms.RadioButton();
-            this.rbt_Triangulo = new System.Windows.Forms.RadioButton();
-            this.rbt_Circulo = new System.Windows.Forms.RadioButton();
+            this.rbt_Rectangle = new System.Windows.Forms.RadioButton();
+            this.rbt_Triangle = new System.Windows.Forms.RadioButton();
+            this.rbt_Circle = new System.Windows.Forms.RadioButton();
             this.lBase = new System.Windows.Forms.Label();
             this.lAlto = new System.Windows.Forms.Label();
             this.lRadius = new System.Windows.Forms.Label();
@@ -48,50 +48,50 @@ namespace Calculadora_de_Area
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // rbt_Rectangulo
+            // rbt_Rectangle
             // 
-            this.rbt_Rectangulo.AutoSize = true;
-            this.rbt_Rectangulo.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbt_Rectangulo.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.rbt_Rectangulo.Location = new System.Drawing.Point(75, 90);
-            this.rbt_Rectangulo.Name = "rbt_Rectangulo";
-            this.rbt_Rectangulo.Size = new System.Drawing.Size(96, 25);
-            this.rbt_Rectangulo.TabIndex = 0;
-            this.rbt_Rectangulo.TabStop = true;
-            this.rbt_Rectangulo.Text = "Rectangle";
-            this.rbt_Rectangulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rbt_Rectangulo.UseVisualStyleBackColor = true;
-            this.rbt_Rectangulo.CheckedChanged += new System.EventHandler(this.rbt_Rectangulo_CheckedChanged);
+            this.rbt_Rectangle.AutoSize = true;
+            this.rbt_Rectangle.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbt_Rectangle.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.rbt_Rectangle.Location = new System.Drawing.Point(75, 90);
+            this.rbt_Rectangle.Name = "rbt_Rectangle";
+            this.rbt_Rectangle.Size = new System.Drawing.Size(96, 25);
+            this.rbt_Rectangle.TabIndex = 0;
+            this.rbt_Rectangle.TabStop = true;
+            this.rbt_Rectangle.Text = "Rectangle";
+            this.rbt_Rectangle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbt_Rectangle.UseVisualStyleBackColor = true;
+            this.rbt_Rectangle.CheckedChanged += new System.EventHandler(this.rbt_Rectangulo_CheckedChanged);
             // 
-            // rbt_Triangulo
+            // rbt_Triangle
             // 
-            this.rbt_Triangulo.AutoSize = true;
-            this.rbt_Triangulo.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbt_Triangulo.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.rbt_Triangulo.Location = new System.Drawing.Point(177, 90);
-            this.rbt_Triangulo.Name = "rbt_Triangulo";
-            this.rbt_Triangulo.Size = new System.Drawing.Size(84, 25);
-            this.rbt_Triangulo.TabIndex = 1;
-            this.rbt_Triangulo.TabStop = true;
-            this.rbt_Triangulo.Text = "Triangle";
-            this.rbt_Triangulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rbt_Triangulo.UseVisualStyleBackColor = true;
-            this.rbt_Triangulo.CheckedChanged += new System.EventHandler(this.rbt_Triangulo_CheckedChanged);
+            this.rbt_Triangle.AutoSize = true;
+            this.rbt_Triangle.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbt_Triangle.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.rbt_Triangle.Location = new System.Drawing.Point(177, 90);
+            this.rbt_Triangle.Name = "rbt_Triangle";
+            this.rbt_Triangle.Size = new System.Drawing.Size(84, 25);
+            this.rbt_Triangle.TabIndex = 1;
+            this.rbt_Triangle.TabStop = true;
+            this.rbt_Triangle.Text = "Triangle";
+            this.rbt_Triangle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbt_Triangle.UseVisualStyleBackColor = true;
+            this.rbt_Triangle.CheckedChanged += new System.EventHandler(this.rbt_Triangulo_CheckedChanged);
             // 
-            // rbt_Circulo
+            // rbt_Circle
             // 
-            this.rbt_Circulo.AutoSize = true;
-            this.rbt_Circulo.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbt_Circulo.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.rbt_Circulo.Location = new System.Drawing.Point(274, 90);
-            this.rbt_Circulo.Name = "rbt_Circulo";
-            this.rbt_Circulo.Size = new System.Drawing.Size(67, 25);
-            this.rbt_Circulo.TabIndex = 2;
-            this.rbt_Circulo.TabStop = true;
-            this.rbt_Circulo.Text = "Circle";
-            this.rbt_Circulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rbt_Circulo.UseVisualStyleBackColor = true;
-            this.rbt_Circulo.CheckedChanged += new System.EventHandler(this.rbt_Circulo_CheckedChanged);
+            this.rbt_Circle.AutoSize = true;
+            this.rbt_Circle.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbt_Circle.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.rbt_Circle.Location = new System.Drawing.Point(274, 90);
+            this.rbt_Circle.Name = "rbt_Circle";
+            this.rbt_Circle.Size = new System.Drawing.Size(67, 25);
+            this.rbt_Circle.TabIndex = 2;
+            this.rbt_Circle.TabStop = true;
+            this.rbt_Circle.Text = "Circle";
+            this.rbt_Circle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbt_Circle.UseVisualStyleBackColor = true;
+            this.rbt_Circle.CheckedChanged += new System.EventHandler(this.rbt_Circulo_CheckedChanged);
             // 
             // lBase
             // 
@@ -260,15 +260,16 @@ namespace Calculadora_de_Area
             this.Controls.Add(this.lRadius);
             this.Controls.Add(this.lAlto);
             this.Controls.Add(this.lBase);
-            this.Controls.Add(this.rbt_Circulo);
-            this.Controls.Add(this.rbt_Triangulo);
-            this.Controls.Add(this.rbt_Rectangulo);
+            this.Controls.Add(this.rbt_Circle);
+            this.Controls.Add(this.rbt_Triangle);
+            this.Controls.Add(this.rbt_Rectangle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "CalculArea";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CalculArea";
+            //this.CursorChanged += new System.EventHandler(this.CalculArea_CursorChanged);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -276,9 +277,9 @@ namespace Calculadora_de_Area
         }
 
         #endregion
-        private System.Windows.Forms.RadioButton rbt_Rectangulo;
-        private System.Windows.Forms.RadioButton rbt_Triangulo;
-        private System.Windows.Forms.RadioButton rbt_Circulo;
+        private System.Windows.Forms.RadioButton rbt_Rectangle;
+        private System.Windows.Forms.RadioButton rbt_Triangle;
+        private System.Windows.Forms.RadioButton rbt_Circle;
         private System.Windows.Forms.Label lBase;
         private System.Windows.Forms.Label lAlto;
         private System.Windows.Forms.Label lRadius;
